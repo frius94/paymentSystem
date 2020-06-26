@@ -1,0 +1,149 @@
+<XML-FSCM-INVOICE-2003A>
+    <INTERCHANGE>
+        <IC-SENDER>
+            <Pid>41010000001234567</Pid>
+        </IC-SENDER>
+        <IC-RECEIVER>
+            <Pid>41010106799303734</Pid>
+        </IC-RECEIVER>
+        <IR-Ref/>
+    </INTERCHANGE>
+    <INVOICE>
+        <HEADER>
+            <FUNCTION-FLAGS>
+                <Confirmation-Flag/>
+                <Canellation-Flag/>
+            </FUNCTION-FLAGS>
+            <MESSAGE-REFERENCE>
+                <REFERENCE-DATE>
+                    <Reference-No>eindeutige Rechnungsnummer</Reference-No>
+                    <Date>20200731</Date>
+                </REFERENCE-DATE>
+            </MESSAGE-REFERENCE>
+            <PRINT-DATE>
+                <Date>20200731</Date>
+            </PRINT-DATE>
+            <REFERENCE>
+                <INVOICE-REFERENCE>
+                    <REFERENCE-DATE>
+                        <Reference-No>eindeutigeRechnungsnummer</Reference-No>
+                        <Date>20200731</Date>
+                    </REFERENCE-DATE>
+                </INVOICE-REFERENCE>
+                <ORDER>
+                    <REFERENCE-DATE>
+                        <Reference-No>eindeutigeNummer3</Reference-No>
+                        <Date>20200731</Date>
+                    </REFERENCE-DATE>
+                </ORDER>
+                <REMINDER Which="MAH">
+                    <REFERENCE-DATE>
+                        <Reference-No>eindeutigeNummer4</Reference-No>
+                        <Date>20200731</Date>
+                    </REFERENCE-DATE>
+                </REMINDER>
+                <OTHER-REFERENCE Type="ADE|CR|CT">
+                    <REFERENCE-DATE>
+                        <Reference-No>eindeutigeNummer4</Reference-No>
+                        <Date>20200731</Date>
+                    </REFERENCE-DATE>
+                </OTHER-REFERENCE>
+            </REFERENCE>
+            <BILLER>
+                <Tax-No>CHE-111.222.333 MWST</Tax-No>
+                <Doc-Reference Type="ESR-NEU|ESR-ALT|IPI"></Doc-Reference>
+                <PARTY-ID>
+                    <Pid>41010000001234567</Pid>
+                </PARTY-ID>
+                <NAME-ADDRESS Format="COM">
+                    <NAME>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                    </NAME>
+                    <STREET>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                    </STREET>
+                    <City></City>
+                    <State></State>
+                    <Zip></Zip>
+                    <Country></Country>
+                </NAME-ADDRESS>
+                <BANK-INFO>
+                    <Acct-No></Acct-No>
+                    <Acct-Name></Acct-Name>
+                    <BankId Type="BCNr-nat|BCNr-int|Bic|Esr|Iban" Country="CH">001996</BankId>
+                </BANK-INFO>
+            </BILLER>
+            <PAYER>
+                <PARTY-ID>
+                    <Pid>41010106799303734</Pid>
+                </PARTY-ID>
+                <NAME-ADDRESS Format="COM">
+                    <NAME>
+                        <Line-35>Vorname Nachname</Line-35>
+                        <Line-35>Musterstrasse 12</Line-35>
+                        <Line-35>3052 Zollikofen</Line-35>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                    </NAME>
+                    <STREET>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                        <Line-35></Line-35>
+                    </STREET>
+                    <City></City>
+                    <State></State>
+                    <Zip></Zip>
+                    <Country></Country>
+                </NAME-ADDRESS>
+            </PAYER>
+        </HEADER>
+        <LINE-ITEM/>
+        <SUMMARY>
+            <INVOICE-AMOUNT>
+                <Amount>0000021095</Amount>
+            </INVOICE-AMOUNT>
+            <VAT-AMOUNT>
+                <Amount></Amount>
+            </VAT-AMOUNT>
+            <DEPOSIT-AMOUNT>
+                <Amount></Amount>
+                <REFERENCE-DATE>
+                    <Reference-No>eindeutigeNummer4</Reference-No>
+                    <Date>20200731</Date>
+                </REFERENCE-DATE>
+            </DEPOSIT-AMOUNT>
+            <EXTENDED-AMOUNT Type="79">
+                <Amount></Amount>
+            </EXTENDED-AMOUNT>
+            <TAX>
+                <TAX-BASIS>
+                    <Amount></Amount>
+                </TAX-BASIS>
+                <Rate Categorie="S|E">0</Rate>
+                <Amount></Amount>
+            </TAX>
+            <PAYMENT-TERMS>
+                <BASIC Payment-Type="ESR|ESP|NPY" Terms-Type="1|5">
+                    <TERMS>
+                        <Payment-Period Type="CD|M" On-Or-After="1|3" Reference-Day="5|29">30</Payment-Period>
+                        <Date>20130831</Date>
+                    </TERMS>
+                </BASIC>
+                <DISCOUNT Terms-Type="22">
+                    <Discount-Percentage>2.0</Discount-Percentage>
+                    <TERMS>
+                        <Payment-Period Type="CD|M" On-Or-After="1|3" Reference-Day="5|29">30</Payment-Period>
+                        <Date>20130831</Date>
+                    </TERMS>
+                    <Back-Pack-Container Encode="Base64|Hex">xxyy</Back-Pack-Container>
+                </DISCOUNT>
+            </PAYMENT-TERMS>
+        </SUMMARY>
+    </INVOICE>
+</XML-FSCM-INVOICE-2003A>
